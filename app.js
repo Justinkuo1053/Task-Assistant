@@ -31,8 +31,8 @@ mongoose
     console.log("連結到mongodb...");
   })
   .catch((e) => {
+    console.log(e);
     return res.status(500).send("無法儲存使用者。。。");
-    return console.log(e);
   });
 
 const start = async () => {
